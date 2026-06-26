@@ -1,12 +1,11 @@
-import ParticlesBackground from "./ParticlesBackground";
-
 function Hero() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 flex items-center justify-center text-center overflow-hidden"
-            id="inicio"
-            >
-
-      <ParticlesBackground />
+    <section
+      id="inicio"
+      className="relative min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-cyan-950 flex items-center justify-center text-center overflow-hidden"
+    >
+      {/* Brillo decorativo */}
+      <div className="absolute w-[700px] h-[700px] bg-cyan-500/10 rounded-full blur-3xl"></div>
 
       <div className="relative z-10">
 
@@ -42,23 +41,14 @@ function Hero() {
 
         <div className="flex flex-col md:flex-row gap-5 justify-center">
 
-        <a
-        href="https://wa.me/5215616729421?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización."
-        target="_blank"
-        rel="noreferrer"
-        className="
-            bg-cyan-500
-            hover:bg-cyan-600
-            text-black
-            font-bold
-            px-8
-            py-4
-            rounded-xl
-            transition
-        "
-        >
-        Solicitar Cotización
-        </a>
+          <a
+            href="https://wa.me/5215616729421?text=Hola,%20me%20gustaría%20solicitar%20una%20cotización."
+            target="_blank"
+            rel="noreferrer"
+            className="bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-8 py-4 rounded-xl transition"
+          >
+            Solicitar Cotización
+          </a>
 
           <button className="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-8 py-4 rounded-xl transition">
             Ver Servicios
